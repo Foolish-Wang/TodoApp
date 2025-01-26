@@ -68,7 +68,7 @@ In the `database.py` file, modify the `SQLALCHEMY_DATABASE_URL` variable to ensu
 ```python
 # database.py
 import os
-SQLALCHEMY_DATABASE_URL = os.getenv("YOUR_URL")
+SQLALCHEMY_DATABASE_URL = os.getenv("SQLALCHEMY_DATABASE_URL")
 ```
 
 ### 7. Start the Project
@@ -87,13 +87,9 @@ Once started, you can visit `http://127.0.0.1:8000` in your browser to see the p
 
 During local development, I used Docker's PostgreSQL image to run the database. If you use a different database, some code adjustments may be required.
 
----
-
 ## Deployment
 
 I deployed the project to [Render](https://render.com/), a cloud platform that supports various applications and databases.
-
----
 
 ## Database Hosting
 
